@@ -1,0 +1,226 @@
+@import "_varSass.sass"
+
+body, html
+	background-color: $lightGrey
+	color: white
+	//overflow-x: hidden
+	min-width: 320px
+
+.main-header
+	background-color: $mainBlue
+	padding-top: 30px
+	padding-bottom: 30px
+
+.siteLink
+	padding-top: 10px
+	padding-bottom: 10px
+	&__link
+		font-weight: bold
+		color: white
+		text-transform: uppercase
+		font-size: 0.8em
+		&:hover
+			color: white
+	&__link--grey
+		color: #555
+		&:hover
+			color: #555
+
+.contacts
+	padding-top: 10px
+	padding-bottom: 10px
+	display: flex
+	flex-direction: row
+	justify-content: flex-end
+	align-items: center
+	flex-wrap: nowrap
+	align-content: center
+	align-self: center
+	&__phoneIcon
+		margin-right: 10px
+		color: white
+		&--grey
+			color: #555
+	&__tel
+		color: white
+		font-weight: bold
+		&:hover
+			text-decoration: none
+			color: white
+		&--grey
+			color: #555
+			&:hover
+				color: #555
+
+
+.logoContainer
+	&--center
+		text-align: center
+	&__mainLogo
+		height: 120px
+		width: auto
+.h1
+	text-transform: uppercase
+	text-align: center
+	margin-top: 30px
+	color: $lightBlue
+
+.userContainer
+	float: right
+	&--inHeader
+		margin-top: 30px
+	&__userItem
+		float: right
+		width: 100%
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		&__avatar
+			& img
+				height: 50px
+				width: auto
+				border-radius: 25px
+		&__contacts
+			margin-left: 15px
+			&__name
+				color: $lightBlue
+				font-size: 1em
+			&__subdivision
+				color: $lightBlue
+				font-size: 0.75em
+
+.buttonContainer
+	width: 100%
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	align-items: space-between
+	border-bottom: 1px solid #BBB
+	&__line
+		width: 1px
+		height: 45px
+		background-color: #BBB
+
+.flat-button
+	text-align: center
+	width: 50%
+	color: #555
+	padding-top: 10px
+	padding-bottom: 10px
+	text-transform: uppercase
+	font-weight: 600
+	letter-spacing: 2px
+	&:hover
+		color: #555
+	&:focus, &:hover
+		color: #555
+		outline: none
+
+.message-container
+	background-color: $darkWhite
+	color: #555
+	height: 300px
+	margin-top: 30px
+	border-radius: 2px
+.contacts-container
+	background-color: $darkWhite
+	color: #555
+	height: 300px
+	margin-top: 30px
+	border-radius: 2px
+.write-container
+	background-color: $darkWhite
+	color: #555
+	height: 100px
+	border-radius: 2px
+.smail-container
+	background-color: $darkWhite
+	color: #555
+	height: 100px
+	border-radius: 2px
+
+.main-footer
+	padding-top: 20px
+	padding-bottom: 10px
+	background-color: $mainBlue
+	color: $lightBlue
+
+
+
+
+
+
+// ----- default Sass Style ----- //
+// button
+.button
+	display: inline-block
+	border: none
+	color: #fff
+	text-decoration: none
+	background-color: $darkGrey
+	padding: 15px 45px
+	font-size: 13px
+	text-transform: uppercase
+	font-weight: 600
+	letter-spacing: 3px
+	border-radius: 2px
+	text-align: center
+	position: relative
+	outline: none
+	transition: background-color .1s ease
+	cursor: pointer
+	&::after
+		transition: background-color .2s ease
+		position: absolute
+		content: ''
+		height: 4px
+		bottom: 0
+		width: 100%
+		background-color: darken($darkGrey, 50%)
+		opacity: .18
+		border-bottom-left-radius: 2px
+		border-bottom-right-radius: 2px
+		left: 0
+	&:focus, &:hover
+		text-decoration: none
+		color: #fff
+		outline: none
+	&:hover
+		background-color: ($darkGrey, 5%)
+		&::after
+			opacity: .22
+	&:active
+		background-color: darken($darkGrey, 5%)
+		&::after
+			opacity: .32
+
+.mrg-btm-40
+	margin-bottom: 40px
+.no-padding
+	padding: 0
+
+// footer down
+body, html
+	height: 100%
+.wrapper
+	display: flex
+	flex-direction: column
+	height: 100%
+.content
+	flex: 1 0 auto
+.footer
+	flex: 0 0 auto
+
+// Small devices (landscape phones, 576px and up)
+//@media (max-width: 575px)
+
+// Medium devices (tablets, 768px and up)
+//@media (max-width: 767px)
+	
+// Large devices (desktops, 992px and up)
+//@media (max-width: 991px)
+
+// Extra large devices (large desktops, 1200px and up)
+//@media (max-width: 1199px)
+	

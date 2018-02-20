@@ -1,0 +1,278 @@
+body, html {
+  background-color: #DDD;
+  color: white;
+  min-width: 320px; }
+
+.main-header {
+  background-color: #0c317f;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.siteLink {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  .siteLink__link {
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.8em; }
+    .siteLink__link:hover {
+      color: white; }
+  .siteLink__link--grey {
+    color: #555; }
+    .siteLink__link--grey:hover {
+      color: #555; }
+
+.contacts {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center; }
+  .contacts__phoneIcon {
+    margin-right: 10px;
+    color: white; }
+    .contacts__phoneIcon--grey {
+      color: #555; }
+  .contacts__tel {
+    color: white;
+    font-weight: bold; }
+    .contacts__tel:hover {
+      text-decoration: none;
+      color: white; }
+    .contacts__tel--grey {
+      color: #555; }
+      .contacts__tel--grey:hover {
+        color: #555; }
+
+.logoContainer--center {
+  text-align: center; }
+
+.logoContainer__mainLogo {
+  height: 120px;
+  width: auto; }
+
+.h1 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 30px;
+  color: #8698bf; }
+
+.userContainer {
+  float: right; }
+  .userContainer--inHeader {
+    margin-top: 30px; }
+  .userContainer__userItem {
+    float: right;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .userContainer__userItem__avatar img {
+      height: 50px;
+      width: auto;
+      -webkit-border-radius: 25px;
+              border-radius: 25px; }
+    .userContainer__userItem__contacts {
+      margin-left: 15px; }
+      .userContainer__userItem__contacts__name {
+        color: #8698bf;
+        font-size: 1em; }
+      .userContainer__userItem__contacts__subdivision {
+        color: #8698bf;
+        font-size: 0.75em; }
+
+.buttonContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: space-between;
+  -webkit-align-items: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  border-bottom: 1px solid #BBB; }
+  .buttonContainer__line {
+    width: 1px;
+    height: 45px;
+    background-color: #BBB; }
+
+.flat-button {
+  text-align: center;
+  width: 50%;
+  color: #555;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px; }
+  .flat-button:hover {
+    color: #555; }
+  .flat-button:focus, .flat-button:hover {
+    color: #555;
+    outline: none; }
+
+.message-container {
+  background-color: #e5e5e5;
+  color: #555;
+  height: 300px;
+  margin-top: 30px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px; }
+
+.contacts-container {
+  background-color: #e5e5e5;
+  color: #555;
+  height: 300px;
+  margin-top: 30px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px; }
+
+.write-container {
+  background-color: #e5e5e5;
+  color: #555;
+  height: 100px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px; }
+
+.smail-container {
+  background-color: #e5e5e5;
+  color: #555;
+  height: 100px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px; }
+
+.main-footer {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: #0c317f;
+  color: #8698bf; }
+
+.button {
+  display: inline-block;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  background-color: #333;
+  padding: 15px 45px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 3px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  text-align: center;
+  position: relative;
+  outline: none;
+  -webkit-transition: background-color .1s ease;
+  -o-transition: background-color .1s ease;
+  transition: background-color .1s ease;
+  cursor: pointer; }
+  .button::after {
+    -webkit-transition: background-color .2s ease;
+    -o-transition: background-color .2s ease;
+    transition: background-color .2s ease;
+    position: absolute;
+    content: '';
+    height: 4px;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    opacity: .18;
+    -webkit-border-bottom-left-radius: 2px;
+            border-bottom-left-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+    left: 0; }
+  .button:focus, .button:hover {
+    text-decoration: none;
+    color: #fff;
+    outline: none; }
+  .button:hover {
+    background-color: #333, 5%; }
+    .button:hover::after {
+      opacity: .22; }
+  .button:active {
+    background-color: #262626; }
+    .button:active::after {
+      opacity: .32; }
+
+.mrg-btm-40 {
+  margin-bottom: 40px; }
+
+.no-padding {
+  padding: 0; }
+
+body, html {
+  height: 100%; }
+
+.wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%; }
+
+.content {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto; }
+
+.footer {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto; }

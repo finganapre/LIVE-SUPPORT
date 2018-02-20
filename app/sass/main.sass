@@ -22,9 +22,9 @@ body, html
 		&:hover
 			color: white
 	&__link--grey
-		color: #555
+		color: #777
 		&:hover
-			color: #555
+			color: #777
 
 .contacts
 	padding-top: 10px
@@ -40,7 +40,7 @@ body, html
 		margin-right: 10px
 		color: white
 		&--grey
-			color: #555
+			color: #777
 	&__tel
 		color: white
 		font-weight: bold
@@ -48,9 +48,9 @@ body, html
 			text-decoration: none
 			color: white
 		&--grey
-			color: #555
+			color: #777
 			&:hover
-				color: #555
+				color: #777
 
 
 .logoContainer
@@ -66,9 +66,12 @@ body, html
 	color: $lightBlue
 
 .userContainer
-	float: right
+	
 	&--inHeader
 		margin-top: 30px
+		float: right
+	&--inChat
+		
 	&__userItem
 		float: right
 		width: 100%
@@ -76,6 +79,8 @@ body, html
 		flex-direction: row
 		justify-content: center
 		align-items: center
+		&--chat
+			margin-bottom: 15px
 		&__avatar
 			& img
 				height: 50px
@@ -98,8 +103,9 @@ body, html
 	align-items: space-between
 	border-bottom: 1px solid #BBB
 	&__line
+		display: flex
 		width: 1px
-		height: 45px
+		min-height: 100%
 		background-color: #BBB
 
 .flat-button
@@ -123,22 +129,57 @@ body, html
 	height: 300px
 	margin-top: 30px
 	border-radius: 2px
+	border-bottom: 1px solid #BBB
+	padding: 15px
+	overflow-y: auto
+	&__incMessage
+		width: auto
+		float: left
+		width: 80%
+		text-align: left
+		margin-bottom: 10px
+		&__text
+			display: inline-block
+			background-color: white
+			color: #333
+			padding: 5px
+			border-radius: 4px
+	&__outMessage
+		float: right
+		width: 80%
+		text-align: right
+		margin-bottom: 10px
+		&__text
+			display: inline-block
+			background-color: $lightBlue
+			color: white
+			padding: 5px
+			border-radius: 4px
+
 .contacts-container
 	background-color: $darkWhite
 	color: #555
 	height: 300px
 	margin-top: 30px
 	border-radius: 2px
+	border-bottom: 1px solid #BBB
+	padding: 15px
+	overflow-y: auto
+
 .write-container
 	background-color: $darkWhite
 	color: #555
 	height: 100px
 	border-radius: 2px
+	padding: 15px
+	overflow-y: auto
 .smail-container
 	background-color: $darkWhite
 	color: #555
 	height: 100px
 	border-radius: 2px
+	padding: 15px
+	overflow-y: auto
 
 .main-footer
 	padding-top: 20px

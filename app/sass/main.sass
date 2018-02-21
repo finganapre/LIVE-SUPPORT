@@ -66,14 +66,13 @@ body, html
 	color: $lightBlue
 
 .userContainer
-	
+	height: auto
 	&--inHeader
 		margin-top: 30px
 		float: right
 	&--inChat
 		
 	&__userItem
-		float: right
 		width: 100%
 		display: flex
 		flex-direction: row
@@ -171,8 +170,18 @@ body, html
 	color: #555
 	height: 100px
 	border-radius: 2px
+	overflow-y: auto
+#message-input
+	display: flex
+	width: 100%
+	min-height: 100%
+	resize: none
+	border: none
+	color: #333
 	padding: 15px
 	overflow-y: auto
+	&:focus
+		outline: none
 .smail-container
 	background-color: $darkWhite
 	color: #555

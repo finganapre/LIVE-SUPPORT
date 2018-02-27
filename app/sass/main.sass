@@ -317,8 +317,11 @@ form.form-horizontal
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td
 	border: none !important
 
-.user-info.table > tbody > tr > th:last-child
-	font-weight: 400
+.user-info .table
+	& tbody
+		& tr
+			& th:last-child
+				font-weight: 400
 
 .table-wrapper
 	&-props

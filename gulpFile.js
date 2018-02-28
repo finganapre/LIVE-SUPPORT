@@ -9,7 +9,9 @@ var gulp 		 = require('gulp'),
 	imagemin 	 = require('gulp-imagemin'),
 	pngQuant	 = require('imagemin-pngquant'),
 	cache 		 = require('gulp-cache'),
-	autoprefixer = require('gulp-autoprefixer');
+	autoprefixer = require('gulp-autoprefixer'),
+	babel        = require('gulp-babel');
+
 	//gutil 		 = require('gulp-util'),
 	//ftp			 = require('vinyl-ftp');
 
@@ -20,6 +22,15 @@ gulp.task('sass', function(){
 	.pipe( autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true}) )
 	.pipe( gulp.dest('app/css') ) // куда положить (без имени файла, только папка)
 	.pipe( browserSync.reload({stream: true}) ); // reload с помощью browserSync
+});
+
+gulp.task('babel', function(){
+	return gulp.src('app/es6js/**/*.js')
+	.pipe(babel({
+		presets: ['env']
+	}))
+	.pipe(gulp.dest('app/js'))
+	.pipe( browserSync.reload({stream: true}) );
 });
 
 // соединение и минификация библиотек js скриптов
@@ -67,10 +78,11 @@ gulp.task('min-image', function(){
 
 ///////////////////////////////////////////////////////////////////////////////////////
 // автообновление страницы
-gulp.task('watch', ['browser-sync', 'sass', 'scripts-min', 'css-libs-min'], function(){ // параметры в квадратных скобках выполняются до watch
+gulp.task('watch', ['browser-sync', 'sass', 'babel', 'scripts-min', 'css-libs-min'], function(){ // параметры в квадратных скобках выполняются до watch
 	gulp.watch('app/img/**/*', browserSync.reload);
 	gulp.watch('app/sass/**/*.+(scss|sass)', ['sass']);
 	gulp.watch('app/*.html', browserSync.reload);
+	gulp.watch('app/es6js/**/*.js', ['babel']);
 	gulp.watch('app/js/**/*.js', browserSync.reload);
 });
 ///////////////////////////////////////////////////////////////////////////////////////
@@ -86,7 +98,7 @@ gulp.task('clear-cash', function(){
 });
 
 // building prodaction project
-gulp.task('build', ['clean-dist', 'min-image', 'sass', 'scripts-min'], function(){
+gulp.task('build', ['clean-dist', 'min-image', 'sass', 'babel', 'scripts-min'], function(){
 	var buildCss = gulp.src('app/css/**/*.css')
 		.pipe(gulp.dest('dist/css'));
 

@@ -1,5 +1,5 @@
 body, html {
-  background-color: #DDD;
+  background-color: #C9D0DC;
   color: white;
   min-width: 320px; }
 
@@ -304,15 +304,15 @@ form.form-horizontal {
               box-shadow: none;
       color: #8698bf; }
     form.form-horizontal input::-webkit-input-placeholder {
-      color: #DDD; }
+      color: #C9D0DC; }
     form.form-horizontal input::-moz-placeholder {
-      color: #DDD; }
+      color: #C9D0DC; }
     form.form-horizontal input:-ms-input-placeholder {
-      color: #DDD; }
+      color: #C9D0DC; }
     form.form-horizontal input::-ms-input-placeholder {
-      color: #DDD; }
+      color: #C9D0DC; }
     form.form-horizontal input::placeholder {
-      color: #DDD; }
+      color: #C9D0DC; }
     form.form-horizontal input[type="submit"] {
       border: 1px solid white;
       cursor: pointer;
@@ -348,8 +348,10 @@ form.form-horizontal {
     -webkit-border-radius: 0;
             border-radius: 0;
     background-color: rgba(255, 255, 255, 0.7);
-    border: none;
-    color: #555;
+    border: 1px solid #8698bf;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    color: #8698bf;
     font-size: 1.05em;
     resize: none;
     padding: 10px;
@@ -364,17 +366,20 @@ form.form-horizontal {
       -webkit-box-shadow: none;
               box-shadow: none;
       border: none;
-      color: #555; }
+      border: 1px solid #8698bf;
+      -webkit-border-radius: 3px;
+              border-radius: 3px;
+      color: #8698bf; }
     form.form-horizontal textarea::-webkit-input-placeholder {
-      color: #929292; }
+      color: #C9D0DC; }
     form.form-horizontal textarea::-moz-placeholder {
-      color: #929292; }
+      color: #C9D0DC; }
     form.form-horizontal textarea:-ms-input-placeholder {
-      color: #929292; }
+      color: #C9D0DC; }
     form.form-horizontal textarea::-ms-input-placeholder {
-      color: #929292; }
+      color: #C9D0DC; }
     form.form-horizontal textarea::placeholder {
-      color: #929292; }
+      color: #C9D0DC; }
 
 .prop-container {
   color: #373737; }
